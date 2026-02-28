@@ -1,15 +1,17 @@
 {
   "name": "brain-sentinel-skill",
-  "version": "1.2.0",
-  "description": "External Brain (AI_Common) Health Monitoring & Auditing Expert. Enforces logical consistency and automated memory journaling.",
+  "version": "1.2.1",
+  "description": "External Brain (Exocortex) Health Monitoring Protocol. Enforces memory journaling, logical consistency, and cross-agent health auditing.",
   "type": "module",
   "author": "司南烛 (Si Nan Zhu)",
   "license": "MIT",
   "keywords": [
+    "exocortex",
+    "ai-memory",
     "external-brain",
-    "memory-guardian",
     "health-audit",
-    "ai-common"
+    "ai-skill",
+    "mcp"
   ],
   "homepage": "https://github.com/webkubor/brain-sentinel-skill",
   "scripts": {
