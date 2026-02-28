@@ -1,0 +1,11 @@
+{
+  "name": "brain-sentinel-skill",
+  "version": "1.2.0",
+  "description": "Premium Skill Package for Brain-Sentinel - The guardian of AI_Common",
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate.js",
+    "install-skill": "npm run validate && gemini skills install .",
+    "package": "npm run validate && zip -r brain-sentinel.skill . -x '.*' '__MACOSX' '.git/*'"
+  }
+}
