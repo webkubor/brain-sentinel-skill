@@ -1,14 +1,18 @@
 {
-  "name": "brain-sentinel-expert",
-  "version": "1.3.0",
-  "description": "The ultimate guardian for your External Brain system.",
-  "author": "webkubor",
-  "license": "MIT",
+  "name": "brain-sentinel-skill",
+  "version": "1.2.0",
+  "description": "External Brain (AI_Common) Health Monitoring & Auditing Expert. Enforces logical consistency and automated memory journaling.",
   "type": "module",
+  "author": "司南烛 (Si Nan Zhu)",
+  "license": "MIT",
+  "keywords": [
+    "external-brain",
+    "memory-guardian",
+    "health-audit",
+    "ai-common"
+  ],
+  "homepage": "https://github.com/webkubor/brain-sentinel-skill",
   "scripts": {
-    "install-skill": "gemini skills install .",
-    "package": "zip -r brain-sentinel-expert.skill . -x '.*' '__MACOSX' '.git/*'",
-    "check-update": "node scripts/check.js",
-    "update": "git pull origin master && npm run install-skill"
+    "validate": "node scripts/validate.js"
   }
 }
