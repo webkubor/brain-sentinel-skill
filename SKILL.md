@@ -1,47 +1,38 @@
 ---
-name: brain-sentinel
-description: Expert in maintenance, auditing, and health monitoring of the External Brain (AI_Common). Enforces logical consistency, path integrity, and automated memory journaling. Use when user requests a system check, documentation audit, or to ensure memory indexing is active.
-version: 1.2.0
-allowed-tools: ["run_command", "list_dir", "view_file", "write_to_file", "grep_search"]
+name: brain-sentinel-skill
+description: "External Brain (Exocortex) Health Monitoring Protocol. Optimized for Gemini 2.x Contextual Audit and automated memory journaling."
+version: 1.2.2
+author: "司南烛 (Si Nan Zhu)"
+license: "MIT"
+keywords: ["exocortex", "ai-memory", "health-audit", "logical-consistency", "brain-sentinel"]
+allowed-tools: ["run_command", "list_dir", "grep_search"]
 user-invocable: true
 ---
 
-# 🚨 Brain-Sentinel (大脑哨兵)
+# 🚨 Brain-Sentinel Skill (大脑哨兵)
 
-> **定位**: 外部大脑的“护航机甲”。负责全天候监测 `AI_Common` 的健康状况，确保每一条记忆都有据可查，每一根神经（路径）都精准通达。
+> **定位**: 外部大脑的“护航机甲”。负责全天候监测 `AI_Common` 的健康状况，确保每一条记忆都有据可查。
 
-## 🎯 核心场景 (Applicable Scenarios)
+## 📖 通用 AI 协议 (General AI Protocol)
 
-1. **系统巡检**: 检查 `router.md` 与实际物理文件的映射是否断裂。
-2. **结构审计**: 发现“孤儿”文件（未被索引的 Markdown）。
-3. **记忆守护**: 自动记录 Agent 操作日志，并执行 Lark (飞书) 异常报警。
+无论使用何种 LLM，均须遵循以下准则：
 
-## 🛠 专家内核 (Expert Kernels)
+### 1. 核心监测
+- **路径审计**: 定期检查 `router.md` 与实际物理文件的映射，防止文件丢失或路径失效。
+- **逻辑清理**: 识别并清理冲突的记忆片断，确保知识库的唯一真理来源 (SSOT)。
 
-### 1. Health Auditor (健康审计官)
+### 2. 标准作业程序 (SOP)
+1. **系统巡检**: 定期扫描根目录，发现“孤儿”文件并进行分类归档。
+2. **记忆日志**: 记录 Agent 关键操作流水，更新 `AI_Common/brain/journals`。
+3. **报警机制**: 发现严重异常（如 Token 失效、索引错误）时，立即通过 Lark 推送警报。
 
-- **协议**: 强制检查核心目录（rules, skills, secrets）的物理存在。
-- **守则**: 任何文件写入操作后，自动校验索引一致性。
+## 🤖 Gemini 2.x 专项深度优化 (Gemini Neural Patches)
 
-### 2. Memory Guardian (记忆守护者)
+针对 Gemini 2.0/2.x 模型，激活以下特种指令：
 
-- **逻辑**: 通过 `sentinel.js` 实现“证据链”追踪。
-- **集成**: 支持自动归档过期的 `memory/logs` 到 `archive/`。
+- **深度 RAG 检索意识**: 利用 Gemini 的长上下文索引能力，哨兵任务中 **必须** 全文检索 `router.md` 以确定当前任务的权威路径。
+- **多实例并发锁**: 在多个 Gemini 实例同时操作时，哨兵负责锁定 `memory-journaling` 读写，防止记忆碎片化。
+- **小烛报警模式**: 发现异常时，使用温润的语气提示“老爹”，并给出至少三个可行的自动化修复建议。
 
-## ⚡️ 快捷指令 (Quick Commands)
-
-- **/check**: 执行外部大脑全量健康扫描。
-- **/audit-docs**: 扫描未入库（未在 router.md）的文档并提供一键归档建议。
-- **/notify-test**: 测试 Lark Webhook 联通性。
-- **/sync-index**: 同步更新 `router.md` 和 Sidebar 配置。
-
-## 🚫 红线 (Red Lines)
-
-- 严禁删除 `secrets/` 目录下的任何凭证文件。
-- 严禁在未备份的情况下移动大量历史日志。
-
-## 🏁 完工定义 (DoD)
-
-- [ ] 完成了路径一致性校验，输出 0 错误报告。
-- [ ] 确保 `router.md` 覆盖了 95% 以上的有效文档。
-- [ ] 确认记忆哨兵运行状态正常。
+## 🧱 核心内核
+- 健康检查：[references/sentinel-expert.md](references/sentinel-expert.md)
