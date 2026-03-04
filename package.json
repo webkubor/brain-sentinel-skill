@@ -3,7 +3,7 @@
   "version": "1.2.1",
   "description": "External Brain (Exocortex) Health Monitoring Protocol. Enforces memory journaling, logical consistency, and cross-agent health auditing.",
   "type": "module",
-  "author": "司南烛 (Si Nan Zhu)",
+  "author": "webkubor",
   "license": "MIT",
   "keywords": [
     "exocortex",
@@ -16,5 +16,16 @@
   "homepage": "https://github.com/webkubor/brain-sentinel-skill",
   "scripts": {
     "validate": "node scripts/validate.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webkubor/brain-sentinel-skill.git"
+  },
+  "bugs": {
+    "url": "https://github.com/webkubor/brain-sentinel-skill/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

@@ -2,7 +2,7 @@
 name: brain-sentinel-skill
 description: "External Brain (Exocortex) Health Monitoring Protocol. Optimized for Gemini 2.x Contextual Audit and automated memory journaling."
 version: 1.2.2
-author: "司南烛 (Si Nan Zhu)"
+author: "webkubor"
 license: "MIT"
 keywords: ["exocortex", "ai-memory", "health-audit", "logical-consistency", "brain-sentinel"]
 allowed-tools: ["run_command", "list_dir", "grep_search"]
